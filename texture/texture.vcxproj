@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CShader.cpp" />
-    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="CTexture2D.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

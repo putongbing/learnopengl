@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texture", "texture\texture.vcxproj", "{E3313CA8-A896-4B34-8C4A-CC2BD599E8E5}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shader", "shader\sahder.vcxproj", "{7593CAD1-3422-40C9-A034-067534C6BDF1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "camera", "camera\camera.vcxproj", "{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E3313CA8-A896-4B34-8C4A-CC2BD599E8E5}.Debug|x64.ActiveCfg = Debug|x64
-		{E3313CA8-A896-4B34-8C4A-CC2BD599E8E5}.Debug|x64.Build.0 = Debug|x64
-		{E3313CA8-A896-4B34-8C4A-CC2BD599E8E5}.Release|x64.ActiveCfg = Release|x64
-		{E3313CA8-A896-4B34-8C4A-CC2BD599E8E5}.Release|x64.Build.0 = Release|x64
-		{7593CAD1-3422-40C9-A034-067534C6BDF1}.Debug|x64.ActiveCfg = Debug|x64
-		{7593CAD1-3422-40C9-A034-067534C6BDF1}.Debug|x64.Build.0 = Debug|x64
-		{7593CAD1-3422-40C9-A034-067534C6BDF1}.Release|x64.ActiveCfg = Release|x64
-		{7593CAD1-3422-40C9-A034-067534C6BDF1}.Release|x64.Build.0 = Release|x64
+		{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}.Debug|x64.ActiveCfg = Debug|x64
+		{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}.Debug|x64.Build.0 = Debug|x64
+		{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}.Release|x64.ActiveCfg = Release|x64
+		{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

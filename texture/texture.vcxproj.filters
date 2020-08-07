@@ -21,10 +21,10 @@
     <ClCompile Include="CShader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CTexture.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="CTexture2D.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
