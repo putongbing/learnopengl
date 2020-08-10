@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "camera", "camera\camera.vcxproj", "{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "phong", "phong\phong.vcxproj", "{EEBBCFA0-BC78-48B6-9504-F82A2AF10760}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
