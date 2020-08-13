@@ -1,0 +1,12 @@
+﻿G:\opengl\camera\camera.vcxproj(65,5): warning MSB4011: 无法再次导入“C:\Users\YJ-P\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props”。可能已在“G:\opengl\camera\camera.vcxproj (59,5)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(Shader.vcxproj, texture.vcxproj, window.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  main.cpp
+g:\opengl\camera\main.cpp(41): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(42): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(45): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(46): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(48): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(201): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\camera\main.cpp(205): warning C4305: “参数”: 从“double”到“GLfloat”截断
+  camera.vcxproj -> G:\opengl\x64\Debug\camera.exe
