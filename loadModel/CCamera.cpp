@@ -2,7 +2,7 @@
 #include "../glm/gtc/matrix_transform.hpp"
 
 CCamera::CCamera() {
-	m_pos = glm::vec3(0.0, 0.0, 50.0);
+	m_pos = glm::vec3(0.0, 0.0, 3.0);
 	m_worldUp = glm::vec3(0.0, 1.0, 0.0);
 	m_sensitivity = 0.05;
 	m_moveSpeed = 2.5;

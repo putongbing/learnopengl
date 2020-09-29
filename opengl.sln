@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mulLight", "mulLight\mulLig
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "loadModel", "loadModel\loadModel.vcxproj", "{33B5FCEC-57D7-4766-9DF0-B358557F9CA7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "outline", "outline\outline.vcxproj", "{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +35,10 @@ Global
 		{33B5FCEC-57D7-4766-9DF0-B358557F9CA7}.Debug|x64.Build.0 = Debug|x64
 		{33B5FCEC-57D7-4766-9DF0-B358557F9CA7}.Release|x64.ActiveCfg = Release|x64
 		{33B5FCEC-57D7-4766-9DF0-B358557F9CA7}.Release|x64.Build.0 = Release|x64
+		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Debug|x64.ActiveCfg = Debug|x64
+		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Debug|x64.Build.0 = Debug|x64
+		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Release|x64.ActiveCfg = Release|x64
+		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
