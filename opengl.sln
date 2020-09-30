@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "loadModel", "loadModel\load
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "outline", "outline\outline.vcxproj", "{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FBO", "FBO\FBO.vcxproj", "{565C65D5-5096-47A8-ADB3-8431B0E74E39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -39,6 +41,10 @@ Global
 		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Debug|x64.Build.0 = Debug|x64
 		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Release|x64.ActiveCfg = Release|x64
 		{F828A9A7-2C20-4264-BAC6-DFA4CEC2089C}.Release|x64.Build.0 = Release|x64
+		{565C65D5-5096-47A8-ADB3-8431B0E74E39}.Debug|x64.ActiveCfg = Debug|x64
+		{565C65D5-5096-47A8-ADB3-8431B0E74E39}.Debug|x64.Build.0 = Debug|x64
+		{565C65D5-5096-47A8-ADB3-8431B0E74E39}.Release|x64.ActiveCfg = Release|x64
+		{565C65D5-5096-47A8-ADB3-8431B0E74E39}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
