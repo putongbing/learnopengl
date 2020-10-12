@@ -1,0 +1,15 @@
+﻿G:\opengl\skybox\skybox.vcxproj(65,5): warning MSB4011: 无法再次导入“C:\Users\YJ-P\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props”。可能已在“G:\opengl\skybox\skybox.vcxproj (59,5)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(camera.vcxproj, FBO.vcxproj, lightMap.vcxproj, loadModel.vcxproj, mulLight.vcxproj, outline.vcxproj, phong.vcxproj, Shader.vcxproj, texture.vcxproj, window.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  CSkybox.cpp
+g:\opengl\skybox\cskybox.cpp(130): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  main.cpp
+g:\opengl\skybox\main.cpp(99): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+g:\opengl\skybox\main.cpp(134): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\skybox\main.cpp(135): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\skybox\main.cpp(138): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\skybox\main.cpp(139): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\skybox\main.cpp(140): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\skybox\main.cpp(141): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+g:\opengl\skybox\main.cpp(258): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+  skybox.vcxproj -> G:\opengl\x64\Debug\skybox.exe

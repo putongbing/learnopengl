@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "camera", "camera\camera.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-explode", "geometry-explode\geometry-explode.vcxproj", "{6CDB204B-E748-41E7-B876-5597D6C3E3AE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-nor-visual", "geometry-nor-visual\geometry-nor-visual.vcxproj", "{BB8E9639-F865-4FCD-856C-A71E3977AE25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -63,6 +65,10 @@ Global
 		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Debug|x64.Build.0 = Debug|x64
 		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Release|x64.ActiveCfg = Release|x64
 		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Release|x64.Build.0 = Release|x64
+		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Debug|x64.ActiveCfg = Debug|x64
+		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Debug|x64.Build.0 = Debug|x64
+		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Release|x64.ActiveCfg = Release|x64
+		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
