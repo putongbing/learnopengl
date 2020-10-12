@@ -22,4 +22,5 @@ void main()
 	float spe = pow(max(dot(ref, viewDir), 0.0), 32.0);
 	vec3 specular = spe * lightColor * texture(texture_specular1, outTex).rgb;
     FragColor = vec4(specular + diffuse, 1.0);
+	//FragColor = vec4(outNor, 1.0);
 }

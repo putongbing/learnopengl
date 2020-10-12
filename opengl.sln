@@ -17,6 +17,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "skybox", "skybox\skybox.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FBO", "FBO\FBO.vcxproj", "{672EEA52-421D-4796-96F9-CB4131915F27}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "camera", "camera\camera.vcxproj", "{8BCB3D30-4759-4DF6-A068-298E1808F8AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-explode", "geometry-explode\geometry-explode.vcxproj", "{6CDB204B-E748-41E7-B876-5597D6C3E3AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +55,14 @@ Global
 		{672EEA52-421D-4796-96F9-CB4131915F27}.Debug|x64.Build.0 = Debug|x64
 		{672EEA52-421D-4796-96F9-CB4131915F27}.Release|x64.ActiveCfg = Release|x64
 		{672EEA52-421D-4796-96F9-CB4131915F27}.Release|x64.Build.0 = Release|x64
+		{8BCB3D30-4759-4DF6-A068-298E1808F8AB}.Debug|x64.ActiveCfg = Debug|x64
+		{8BCB3D30-4759-4DF6-A068-298E1808F8AB}.Debug|x64.Build.0 = Debug|x64
+		{8BCB3D30-4759-4DF6-A068-298E1808F8AB}.Release|x64.ActiveCfg = Release|x64
+		{8BCB3D30-4759-4DF6-A068-298E1808F8AB}.Release|x64.Build.0 = Release|x64
+		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Debug|x64.ActiveCfg = Debug|x64
+		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Debug|x64.Build.0 = Debug|x64
+		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Release|x64.ActiveCfg = Release|x64
+		{6CDB204B-E748-41E7-B876-5597D6C3E3AE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

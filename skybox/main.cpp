@@ -11,6 +11,7 @@
 #include "CCamera.h"
 #include "CModelX.h"
 #include "./stb_image.h"
+#include "CSkybox.h"
 
 float lastX = 0.0;
 float lastY = 0.0;
@@ -31,6 +32,51 @@ std::vector<std::string> paths{
 	"./skybox-image//top.jpg",
 	"./skybox-image//front.jpg",
 	"./skybox-image//back.jpg"
+};
+
+float skyboxVertices[] = {
+	// positions          
+	-1.0f,  1.0f, -1.0f,
+	-1.0f, -1.0f, -1.0f,
+	 1.0f, -1.0f, -1.0f,
+	 1.0f, -1.0f, -1.0f,
+	 1.0f,  1.0f, -1.0f,
+	-1.0f,  1.0f, -1.0f,
+
+	-1.0f, -1.0f,  1.0f,
+	-1.0f, -1.0f, -1.0f,
+	-1.0f,  1.0f, -1.0f,
+	-1.0f,  1.0f, -1.0f,
+	-1.0f,  1.0f,  1.0f,
+	-1.0f, -1.0f,  1.0f,
+
+	 1.0f, -1.0f, -1.0f,
+	 1.0f, -1.0f,  1.0f,
+	 1.0f,  1.0f,  1.0f,
+	 1.0f,  1.0f,  1.0f,
+	 1.0f,  1.0f, -1.0f,
+	 1.0f, -1.0f, -1.0f,
+
+	-1.0f, -1.0f,  1.0f,
+	-1.0f,  1.0f,  1.0f,
+	 1.0f,  1.0f,  1.0f,
+	 1.0f,  1.0f,  1.0f,
+	 1.0f, -1.0f,  1.0f,
+	-1.0f, -1.0f,  1.0f,
+
+	-1.0f,  1.0f, -1.0f,
+	 1.0f,  1.0f, -1.0f,
+	 1.0f,  1.0f,  1.0f,
+	 1.0f,  1.0f,  1.0f,
+	-1.0f,  1.0f,  1.0f,
+	-1.0f,  1.0f, -1.0f,
+
+	-1.0f, -1.0f, -1.0f,
+	-1.0f, -1.0f,  1.0f,
+	 1.0f, -1.0f, -1.0f,
+	 1.0f, -1.0f, -1.0f,
+	-1.0f, -1.0f,  1.0f,
+	 1.0f, -1.0f,  1.0f
 };
 
 
@@ -67,6 +113,8 @@ GLuint loadSkybox() {
 	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	return tex;
 }
+
+
 
 void input(GLFWwindow* window) {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
@@ -139,50 +187,6 @@ float cubeVertices[] = {
 	-0.5f,  0.5f, -0.5f,  0.0f, 1.0f
 };
 
-float skyboxVertices[] = {
-	// positions          
-	-1.0f,  1.0f, -1.0f,
-	-1.0f, -1.0f, -1.0f,
-	 1.0f, -1.0f, -1.0f,
-	 1.0f, -1.0f, -1.0f,
-	 1.0f,  1.0f, -1.0f,
-	-1.0f,  1.0f, -1.0f,
-
-	-1.0f, -1.0f,  1.0f,
-	-1.0f, -1.0f, -1.0f,
-	-1.0f,  1.0f, -1.0f,
-	-1.0f,  1.0f, -1.0f,
-	-1.0f,  1.0f,  1.0f,
-	-1.0f, -1.0f,  1.0f,
-
-	 1.0f, -1.0f, -1.0f,
-	 1.0f, -1.0f,  1.0f,
-	 1.0f,  1.0f,  1.0f,
-	 1.0f,  1.0f,  1.0f,
-	 1.0f,  1.0f, -1.0f,
-	 1.0f, -1.0f, -1.0f,
-
-	-1.0f, -1.0f,  1.0f,
-	-1.0f,  1.0f,  1.0f,
-	 1.0f,  1.0f,  1.0f,
-	 1.0f,  1.0f,  1.0f,
-	 1.0f, -1.0f,  1.0f,
-	-1.0f, -1.0f,  1.0f,
-
-	-1.0f,  1.0f, -1.0f,
-	 1.0f,  1.0f, -1.0f,
-	 1.0f,  1.0f,  1.0f,
-	 1.0f,  1.0f,  1.0f,
-	-1.0f,  1.0f,  1.0f,
-	-1.0f,  1.0f, -1.0f,
-
-	-1.0f, -1.0f, -1.0f,
-	-1.0f, -1.0f,  1.0f,
-	 1.0f, -1.0f, -1.0f,
-	 1.0f, -1.0f, -1.0f,
-	-1.0f, -1.0f,  1.0f,
-	 1.0f, -1.0f,  1.0f
-};
 
 int main()
 {
@@ -243,32 +247,9 @@ int main()
 	if (ret != 1)
 		return 0;
 
-	GLuint sbTex = loadSkybox();
-	GLuint sbVAO, sbVBO;
-	glGenVertexArrays(1, &sbVAO);
-	glBindVertexArray(sbVAO);
-	glGenBuffers(1, &sbVBO);
-	glBindBuffer(GL_ARRAY_BUFFER, sbVBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), skyboxVertices, GL_STATIC_DRAW);
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), 0);
-
-	CShader sbShader;
-	unsigned int sbVertId = sbShader.createShader(CShader::VERTEX);
-	ret = sbShader.compileShaderByFile(sbVertId, "./shader//sb.vert.glsl");
-	if (ret != 1)
-		return 0;
-	unsigned int sbFragId = sbShader.createShader(CShader::FRAGMENT);
-	ret = sbShader.compileShaderByFile(sbFragId, "./shader//sb.frag.glsl");
-	if (ret != 1) {
-		char err[1024] = "";
-		sbShader.getCompileOrLinkInfo(sbFragId, CShader::COMPILE, err);
-		return 0;
-	}
-	unsigned int sbLstId[] = { sbVertId, sbFragId };
-	ret = sbShader.linkShader(2, sbLstId);
-	if (ret != 1)
-		return 0;
+	glm::mat4 proj = glm::perspective(45.0, winWidth / (double)winHeight, 1.0, 1000.0);
+	camera.setProjectionMat(proj);
+	CSkybox sb(camera);
 
 	glEnable(GL_DEPTH_TEST);
 	while (!glfwWindowShouldClose(window)) {
@@ -284,21 +265,9 @@ int main()
 
 		glm::mat4 model(1.0);
 		glm::mat4 view = camera.getViewMat();
-		glm::mat4 proj = glm::perspective(45.0, winWidth / (double)winHeight, 1.0, 1000.0);
 
-		glDepthMask(GL_FALSE);
-		glDepthFunc(GL_ALWAYS);
-		glBindVertexArray(sbVAO);
-		sbShader.use();
-		view = glm::mat4(glm::mat3(view));
-		sbShader.setMatrix4x4("view", view);
-		sbShader.setMatrix4x4("proj", proj);
-		glBindTexture(GL_TEXTURE_CUBE_MAP, sbTex);
-		glActiveTexture(GL_TEXTURE0);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		sb.use();
 
-		glDepthMask(GL_TRUE);
-		glDepthFunc(GL_LESS);
 		glBindVertexArray(cubeVAO);
 		cubeShader.use();
 		view = camera.getViewMat();
