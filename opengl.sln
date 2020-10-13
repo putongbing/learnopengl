@@ -23,7 +23,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-explode", "geometr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-nor-visual", "geometry-nor-visual\geometry-nor-visual.vcxproj", "{BB8E9639-F865-4FCD-856C-A71E3977AE25}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "instanceRender", "instanceRender\instanceRender.vcxproj", "{B2215233-AE9C-483F-9779-ABD8343F5BD7}"
+EndProject
 Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
@@ -69,6 +74,10 @@ Global
 		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Debug|x64.Build.0 = Debug|x64
 		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Release|x64.ActiveCfg = Release|x64
 		{BB8E9639-F865-4FCD-856C-A71E3977AE25}.Release|x64.Build.0 = Release|x64
+		{B2215233-AE9C-483F-9779-ABD8343F5BD7}.Debug|x64.ActiveCfg = Debug|x64
+		{B2215233-AE9C-483F-9779-ABD8343F5BD7}.Debug|x64.Build.0 = Debug|x64
+		{B2215233-AE9C-483F-9779-ABD8343F5BD7}.Release|x64.ActiveCfg = Release|x64
+		{B2215233-AE9C-483F-9779-ABD8343F5BD7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

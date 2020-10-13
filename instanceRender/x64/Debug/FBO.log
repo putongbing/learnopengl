@@ -1,0 +1,5 @@
+﻿G:\opengl\outline\outline.vcxproj(65,5): warning MSB4011: 无法再次导入“C:\Users\YJ-P\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props”。可能已在“G:\opengl\outline\outline.vcxproj (59,5)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+G:\opengl\skybox\skybox.vcxproj(65,5): warning MSB4011: 无法再次导入“C:\Users\YJ-P\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props”。可能已在“G:\opengl\skybox\skybox.vcxproj (59,5)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+G:\opengl\FBO\FBO.vcxproj(65,5): warning MSB4011: 无法再次导入“C:\Users\YJ-P\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props”。可能已在“G:\opengl\FBO\FBO.vcxproj (59,5)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(camera.vcxproj, lightMap.vcxproj, loadModel.vcxproj, mulLight.vcxproj, outline.vcxproj, phong.vcxproj, Shader.vcxproj, texture.vcxproj, window.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  FBO.vcxproj -> G:\opengl\x64\Debug\FBO.exe
